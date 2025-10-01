@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript </title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- 3. llamamos a un archivo externo dentro de la etiquea head. Se suele añadir el atributo defer para que espere a que se cargue la estructura html para ejecutarse-->
-
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 🖱️</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Onest:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Javascript -->
+    <script src="./js/07-condicionales.js" defer></script>
+    <script src="./js/09-switch.js" defer></script>
 </head>
 
 <body>
-    <h1> javascript </h1>
-    <p>javascript es un lenguaje de programacion dinamico y de alto nivel para crear interfaces interactivas y dinamicas
-    </p>
-    <p>es uno de los tres pilares fundamentales desl desarrollo web</p>
 
-    <ul>
-        <li>HTML 👉 define la estructura del contenido. (Elementos que aparecen en la pagina)</li>
-        <li>CSS 👉 Define la apariencia (colores, tamaños. estilos)</li>
-        <li>javascript (JS) 👉 Define el comportamineto (lo que hace la pagina y sus Elementos)</li>
-    </ul>
+    <section>
+        <img src="./assets/cover.jpg" alt="Imagen de portada" />
+        <h1>🧑‍💻 Javascript</h1>
+        <p>Javascript es un lenguaje de programación dinámico y de alto nivel para crear interfaces interactivas y
+            dinámicas.</p>
+        <p>Es uno de los tres pilares fundamentales del desarrollo web.</p>
+        <ul>
+            <li>1️⃣ <strong>HTML.</strong> Define la estructura del contenido. Son los elementos que aparecen en la
+                página</li>
+            <li>2️⃣ <strong>CSS.</strong> Define la apariencia. Colores, tamaños, estilos, etc.</li>
+            <li>3️⃣ <strong>Javascript (JS)</strong> Define el comportamiento. Lo que hace la página o sus elementos.
+            </li>
+        </ul>
+    </section>
 
-    <h2>características de javascript</h2>
+    <section>
+        <h2>Características de Javascript</h2>
+        <ol>
+            <li>☝️ <strong>Lenguaje interpretado.</strong> No necesitamos compilarlo. El navegador lo entiende
+                directamente.</li>
+            <li>☝️ <strong>Basado en objetos.</strong> Maneja objetos como document, window, arrays, date, class.</li>
+            <li>☝️ <strong>Dinámico.</strong> Podemos modificar el contenido en tiempo real. (Sin recargar)</li>
+            <li>☝️ <strong>Versátil y de fácil aprendizaje.</strong> Aunque nació para la web, se usa también en
+                servidores, aplicaciones móviles, videojuegos y hoy en día en Inteligencia Artificial.</li>
+        </ol>
+    </section>
 
-    <ol>
-        <li>lenguaje interpretado 👉 No necesitamos compilarlo. El navegador lo entiende directamente</li>
-        <li>basado en objetos 👉 Maneja objetos como document, window, arrays, date, class.</li>
-        <li>dinamico 👉 Podemos modificar el contenido en tiempo real. (sin recagar)</li>
-        <li>versatil y de facil aprendizaje 👉 aunque nacio para la web, se usa para tambien en servidores, aplicaciones
-            móviles, videojuegos y hoy en día en inteligencia artificial</li>
-    </ol>
-
-
-<!-- 1. agregamos javascript directo en HTML -->
-
-    <script>
-        console.log("hola mundo");
-    </script>
-
-<!-- 2. vincular un archivo externo -->
-
-    <script src="./codigo.js"> </script>
+    <section>
+        <h2>Integración de Javascript JS</h2>
+        <p>Hay tres formas principales de integrar Javascript en una página web:</p>
+        <ul>
+            <li>1️⃣ <strong>Directamente en el HTML.</strong> Usando la etiqueta
+                <code>&lt;script&gt;&lt;/script&gt;</code> dentro del archivo HTML.
+            </li>
+            <li>2️⃣ <strong>Archivo externo.</strong> Vinculando un archivo .js con la etiqueta
+                <code>&lt;script src="ruta/del/archivo.js"&gt;&lt;/script&gt;</code> antes del cierre de la etiqueta
+                <code>&lt;/body&gt;</code>.
+            </li>
+            <li>3️⃣ <strong>Archivo externo en el head.</strong> Vinculando un archivo .js dentro de la etiqueta
+                <code>&lt;head&gt;</code> con el atributo <code>defer</code> para que espere a que se cargue el HTML
+                antes de ejecutarse.
+            </li>
+        </ul>
+        <p>La opción recomendada es la segunda o tercera, ya que permite mantener el código separado del HTML,
+            facilitando su mantenimiento y reutilización.</p>
+    </section>
 
 </body>
 
